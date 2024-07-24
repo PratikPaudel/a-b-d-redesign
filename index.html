@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>American Band Dad</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+<header class="header">
+    <nav class="nav">
+        <img
+                src="img/abdlogo1.png"
+                alt="Bankist logo"
+                class="nav__logo"
+                id="logo"
+                designer="Jonas"
+                data-version-number="3.0"
+        />
+        <ul class="nav__links">
+            <li class="nav__item">
+                <a class="nav__link" href="#section--1">About us</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#section--2">Podcast</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#section--3">Contact</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link--btn btn--show-modal" href="#"
+                >Connect</a
+                >
+            </li> 
+        </ul>
+    </nav>
+
+    <div class="header__title">
+        <!-- <h1 onclick="alert('HTML alert')"> -->
+        <h1>American Band Dad</h1>
+        <h5>Bringing fathers together with resources, merchandise, and engaging content to support their children's musical journey.</h5>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+                src="img/gif5.gif"
+                class="header__img"
+                alt="Minimalist bank items"
+        />
+    </div>
+</header>
+
+<section class="section" id="section--1">
+    <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">Meet MC Farland.</h3>
+    </div>
+
+    <div class="features">
+        <img
+                src="img/image1-lazy.jpg"
+                data-src="img/image1.jpg"
+                alt="Computer"
+                class="features__img lazy-img"
+        />
+        <div class="features__feature">
+            <h5 class="features__header">Supporting Fathers in Music</h5>
+            <p>American Band Dad aims to bring fathers together in a supportive community, offering resources, merchandise, and engaging content to enhance their involvement in their children's musical endeavors.</p>
+        </div>
+
+        <div class="features__feature">
+            <h5 class="features__header">Meet MC Farland.</h5>
+            <p>As National President of the American Band Dad Association, I support band programs through active involvement, event assistance, and fostering an inclusive community, ensuring all members feel valued and inspired.</p>
+        </div>
+        <img
+                src="img/image2-lazy.jpg"
+                data-src="img/image2.jpg"
+                alt="Plant"
+                class="features__img lazy-img"
+        />
+
+        <img
+                src="img/image3-lazy.jpg"
+                data-src="img/image3.jpg"
+                alt="Credit card"
+                class="features__img lazy-img"
+        />
+        <div class="features__feature">
+            <h5 class="features__header">Podcast Page</h5>
+            <p>Join the National President of the American Band Dad Association on an inspiring journey through the world of band support! From backstage anecdotes to tips on fostering a thriving band community, this podcast is your go-to for all things band-related. Don't miss out on the wisdom and camaraderie - hit play and join the band dad revolution!</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="section--3">
+    <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">
+            Thousands of Young Musicians are Already Realizing Their Dreams
+        </h3>
+    </div>
+
+    <div class="slider">
+        <div class="slide">
+            <div class="testimonial">
+                <h5 class="testimonial__header">Empowering Young Musicians: My Journey with ScholarshipAuditions.com</h5>
+                <blockquote class="testimonial__text">
+                    ScholarshipAuditions.com makes a difference in the lives of both the students they serve and the employees and interns they hire. Neither of my parents went to a four-year college, so I went into college with little knowledgeable help. Because of ScholarshipAuditions.com, thousands of young American musicians like me are empowered to realize their collegiate and professional dreams. ScholarshipAuditions.com is truly a driven and excellent company, and it’s been an honor interning with them.
+                </blockquote>
+                <address class="testimonial__author">
+                    <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+                    <h6 class="testimonial__name">Anthony Cash</h6>
+                    <p class="testimonial__location">Holy Cross University</p>
+                </address>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="testimonial">
+                <h5 class="testimonial__header">
+                    Transforming Classroom Knowledge into Impactful Real-World Projects
+                </h5>
+                <blockquote class="testimonial__text">
+                    This internship utilized all the skills I learned through my college courses and put them into real world projects. Unlike other internships there was no busy work involved instead we had the opportunity to work on real projects that the company utilized in their research, website, and conferences. As a company focused on helping students, they insured that the interns got the most out of their time and learned how to utilize their unique skills in the real world.
+                </blockquote>
+                <address class="testimonial__author">
+                    <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+                    <h6 class="testimonial__name">Bailey Wrenne</h6>
+                    <p class="testimonial__location">Middle Tennessee State University</p>
+                </address>
+            </div>
+        </div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+    </div>
+</section>
+
+<section class="section section--sign-up">
+    <div class="section__title">
+        <h3 class="section__header">
+            Join the band dad revolution today!
+        </h3>
+    </div>
+    <button class="btn btn--show-modal">Join Us</button>
+</section>
+
+<footer class="footer">
+    <ul class="footer__nav">
+        <li class="footer__item">
+            <a class="footer__link" href="#">About Us</a>
+        </li>
+        <li class="footer__item">
+            <a class="footer__link" href="#">Linkedin</a>
+        </li>
+        <li class="footer__item">
+            <a class="footer__link" href="#">YouTube</a>
+        </li>
+        <li class="footer__item">
+            <a class="footer__link" href="#">Contact Us</a>
+        </li>
+    </ul>
+    <img src="img/icon.png" alt="Logo" class="footer__logo" />
+    <p class="footer__copyright">
+    </p>
+</footer>
+
+<div class="modal hidden">
+    <button class="btn--close-modal">&times;</button>
+    <h2 class="modal__header">
+        Open your bank account <br />
+        in just <span class="highlight">5 minutes</span>
+    </h2>
+    <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+    </form>
+</div>
+<div class="overlay hidden"></div>
+
+<!-- <script src="script.js"></script> -->
+</body>
+</html>
