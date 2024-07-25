@@ -1,6 +1,4 @@
-﻿/* The page is NOT responsive. You can implement responsiveness yourself if you wanna have some fun 😃 */
-
-:root {
+﻿:root {
     --color-primary: #ec9706;
     --color-secondary: #ffcb03;
     --color-tertiary: #ff585f;
@@ -37,7 +35,6 @@ body {
 .section {
     padding: 15rem 3rem;
     border-top: 1px solid #ddd;
-
     transition: transform 1s, opacity 1s;
 }
 
@@ -225,17 +222,6 @@ h5 {
     font-size: 1.5rem;
 }
 
-.features__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-primary-opacity);
-    height: 5.5rem;
-    width: 5.5rem;
-    border-radius: 50%;
-    margin-bottom: 2rem;
-}
-
 /* SLIDER */
 .slider {
     max-width: 100rem;
@@ -411,42 +397,42 @@ h5 {
 }
 
 /* FOOTER */
-.footer {
+.site-footer {
     padding: 10rem 3rem;
     background-color: #37383d;
 }
 
-.footer__nav {
+.site-footer__nav {
     list-style: none;
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
 }
 
-.footer__item {
+.site-footer__item {
     margin-right: 4rem;
 }
 
-.footer__link {
+.site-footer__link {
     font-size: 1.6rem;
     color: #eee;
     text-decoration: none;
 }
 
-.footer__logo {
+.site-footer__logo {
     height: 5rem;
     display: block;
     margin: 0 auto;
     margin-bottom: 5rem;
 }
 
-.footer__copyright {
+.site-footer__copyright {
     font-size: 1.4rem;
     color: #aaa;
     text-align: center;
 }
 
-.footer__copyright .footer__link {
+.site-footer__copyright .site-footer__link {
     font-size: 1.4rem;
 }
 
@@ -536,3 +522,68 @@ h5 {
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+@media only screen and (max-width: 480px) {
+    .header__title {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "image"
+            "title"
+            "description"
+            "button";
+    }
+    .header__title .header__img {
+        grid-area: image;
+        width: 100%; 
+        order: -1;
+        transform: none;
+    }
+
+    .nav {
+        width: 100%;
+        padding: 0;
+        img {
+            height: 5rem;
+        }
+        a {
+            font-size: 1rem !important;
+        }
+    }
+    .features {
+        grid-template-columns: 1fr; 
+        margin: 0; 
+    }
+
+    .features__img,
+    .features__feature {
+        grid-column: 1 / -1; 
+    }
+
+    .features__img {
+        margin-bottom: 1rem; 
+    }
+
+    .features__feature {
+        text-align: center; 
+        font-size: 1.2rem; 
+        width: 100%; 
+    }
+    .slider {
+        width: 100%;
+        height: 75rem;
+        .slider__btn {
+            top: 95%;
+        }
+        .slide {
+            height: 75rem;
+            width: 100%;
+            .testimonial {
+                width: 100%;
+            }
+            .testimonial::before {
+                display: none;    
+            }
+        }
+    }
+}
+
